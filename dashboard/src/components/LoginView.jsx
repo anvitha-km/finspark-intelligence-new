@@ -199,6 +199,7 @@ export default function LoginView({ onLogin }) {
                 { type: 'tenant_b', label: 'Tenant B', desc: 'tenant_b scope', color: '#f59e0b' },
                 { type: 'tenant_c', label: 'Tenant C', desc: 'tenant_c scope', color: '#ef4444' },
                 { type: 'tenant_d', label: 'Tenant D', desc: 'tenant_d scope', color: '#8b5cf6' },
+                { type: 'tenant_e', label: 'Tenant E', desc: 'tenant_e scope', color: '#ec4899' },
               ].map(u => (
                 <button key={u.type} onClick={() => fillDemo(u.type)} style={{
                   display: 'flex', alignItems: 'center', gap: 10,
