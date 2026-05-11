@@ -195,8 +195,8 @@ export default function ComparisonView() {
                         <span style={{
                           display: 'inline-block', padding: '2px 10px', borderRadius: 12,
                           fontSize: 12, fontWeight: 600,
-                          background: rate >= 80 ? 'rgba(16,185,129,0.15)' : rate >= 50 ? 'rgba(245,158,11,0.15)' : 'rgba(239,68,68,0.15)',
-                          color: rate >= 80 ? 'var(--green)' : rate >= 50 ? 'var(--amber)' : 'var(--red)'
+                          background: rate >= 6 ? 'rgba(16,185,129,0.15)' : rate >= 2 ? 'rgba(245,158,11,0.15)' : 'rgba(239,68,68,0.15)',
+                          color: rate >= 6 ? 'var(--green)' : rate >= 2 ? 'var(--amber)' : 'var(--red)'
                         }}>
                           {rate}%
                         </span>
