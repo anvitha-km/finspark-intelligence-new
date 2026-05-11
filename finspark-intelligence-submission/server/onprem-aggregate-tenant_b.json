@@ -1,0 +1,136 @@
+{
+  "tenantHash": "tenant_4de28df3",
+  "computedAt": "2026-04-26T15:41:07.166Z",
+  "deploymentType": "on-prem",
+  "featureSummary": [
+    {
+      "featureId": "loan-origination.start",
+      "totalInvocations": 59,
+      "uniqueUserCount": 59,
+      "sessionCount": 59,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-04T11:15:39.607Z",
+      "lastSeen": "2026-04-02T11:15:39.607Z",
+      "isActive": false
+    },
+    {
+      "featureId": "loan-origination.kyc",
+      "totalInvocations": 55,
+      "uniqueUserCount": 55,
+      "sessionCount": 55,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-04T11:15:39.608Z",
+      "lastSeen": "2026-04-02T11:15:39.609Z",
+      "isActive": false
+    },
+    {
+      "featureId": "loan-origination.document-upload",
+      "totalInvocations": 50,
+      "uniqueUserCount": 50,
+      "sessionCount": 50,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-04T11:15:39.610Z",
+      "lastSeen": "2026-04-02T11:15:39.609Z",
+      "isActive": false
+    },
+    {
+      "featureId": "account.profile-update",
+      "totalInvocations": 47,
+      "uniqueUserCount": 47,
+      "sessionCount": 47,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-06T11:15:39.611Z",
+      "lastSeen": "2026-04-01T11:15:39.612Z",
+      "isActive": false
+    },
+    {
+      "featureId": "loan-origination.credit-check",
+      "totalInvocations": 19,
+      "uniqueUserCount": 19,
+      "sessionCount": 19,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-04T11:15:39.611Z",
+      "lastSeen": "2026-03-28T11:15:39.611Z",
+      "isActive": false
+    },
+    {
+      "featureId": "loan-origination.approval",
+      "totalInvocations": 15,
+      "uniqueUserCount": 15,
+      "sessionCount": 15,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-06T11:15:39.611Z",
+      "lastSeen": "2026-04-02T11:15:39.611Z",
+      "isActive": false
+    },
+    {
+      "featureId": "report.schedule",
+      "totalInvocations": 12,
+      "uniqueUserCount": 12,
+      "sessionCount": 12,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-05T11:15:39.613Z",
+      "lastSeen": "2026-03-31T11:15:39.613Z",
+      "isActive": false
+    },
+    {
+      "featureId": "report.generate",
+      "totalInvocations": 11,
+      "uniqueUserCount": 11,
+      "sessionCount": 11,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-04T11:15:39.613Z",
+      "lastSeen": "2026-03-28T11:15:39.613Z",
+      "isActive": false
+    },
+    {
+      "featureId": "account.limit-change",
+      "totalInvocations": 11,
+      "uniqueUserCount": 11,
+      "sessionCount": 11,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-06T11:15:39.613Z",
+      "lastSeen": "2026-04-02T11:15:39.613Z",
+      "isActive": false
+    },
+    {
+      "featureId": "report.export",
+      "totalInvocations": 3,
+      "uniqueUserCount": 3,
+      "sessionCount": 3,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-18T11:15:39.613Z",
+      "lastSeen": "2026-03-26T11:15:39.613Z",
+      "isActive": false
+    },
+    {
+      "featureId": "account.closure",
+      "totalInvocations": 3,
+      "uniqueUserCount": 3,
+      "sessionCount": 3,
+      "completionRate": 0,
+      "abandonmentRate": 0,
+      "firstSeen": "2026-03-13T11:15:39.613Z",
+      "lastSeen": "2026-03-22T11:15:39.613Z",
+      "isActive": false
+    }
+  ],
+  "dailyTrend": [],
+  "channelBreakdown": [
+    {
+      "channel": "web",
+      "count": 285
+    }
+  ],
+  "journeyCount": 3
+}

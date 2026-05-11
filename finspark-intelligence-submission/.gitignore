@@ -1,0 +1,9 @@
+node_modules/
+*.mp4
+*.pptx
+*.ppt
+~$*
+# server/finspark.db (Uncommented to push seed data to Railway)
+*.db-shm
+*.db-wal
+.env
