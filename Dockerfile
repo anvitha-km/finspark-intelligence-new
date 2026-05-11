@@ -2,14 +2,17 @@
 # Demonstrates production-readiness for enterprise deployment
 FROM node:18-alpine
 
+# Install build tools needed for better-sqlite3
+RUN apk add --no-cache python3 make g++ sqlite
+
 # Create app directory
 WORKDIR /app
 
 # Copy server package files
 COPY server/package*.json ./server/
 
-# Install dependencies (production only to keep image lean)
-RUN cd server && npm ci --only=production
+# Install dependencies
+RUN cd server && npm ci --omit=dev
 
 # Bundle app source
 COPY server/ ./server/
