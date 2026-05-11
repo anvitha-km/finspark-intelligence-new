@@ -40,6 +40,41 @@
   --header-height: 64px;
 }
 
+/* ─── CSS Variables — Professional Dark Theme ─── */
+[data-theme='dark'] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-sidebar: linear-gradient(180deg, #0f172a, #020617);
+  --bg-header: rgba(15, 23, 42, 0.85);
+  --bg-card: #1e293b;
+  --bg-card-hover: #334155;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-hover: rgba(96, 165, 250, 0.4);
+  --border-glow: rgba(96, 165, 250, 0.15);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-on-sidebar: #f8fafc;
+  --accent-primary: #60a5fa;
+  --accent-secondary: #818cf8;
+  --accent-glow: rgba(96, 165, 250, 0.3);
+  --green: #34d399;
+  --green-bg: rgba(52, 211, 153, 0.12);
+  --green-border: rgba(52, 211, 153, 0.3);
+  --red: #f87171;
+  --red-bg: rgba(248, 113, 113, 0.12);
+  --red-border: rgba(248, 113, 113, 0.3);
+  --yellow: #fbbf24;
+  --yellow-bg: rgba(251, 191, 36, 0.12);
+  --yellow-border: rgba(251, 191, 36, 0.3);
+  --blue: #60a5fa;
+  --blue-bg: rgba(96, 165, 250, 0.12);
+  --blue-border: rgba(96, 165, 250, 0.3);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
+  --shadow-premium: 0 4px 24px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-sidebar: 2px 0 16px rgba(0,0,0,0.4);
+}
+
 /* ─── Reset ─── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -203,6 +238,27 @@ body {
   border: 1px solid rgba(139, 92, 246, 0.3);
   border-radius: 50%;
   animation: orb-rotate 8s linear infinite;
+}
+
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+  margin-right: 8px;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: rotate(15deg);
 }
 
 @keyframes orb-pulse {

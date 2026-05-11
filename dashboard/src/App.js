@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Activity, 
@@ -10,7 +10,9 @@ import {
   Key, 
   LogOut, 
   Search, 
-  ChevronRight
+  ChevronRight,
+  Sun,
+  Moon
 } from 'lucide-react';
 import FinSparkLogo from './components/FinSparkLogo';
 
@@ -48,6 +50,11 @@ export default function App() {
   const [user, setUser] = useState(null);
   const [activeTab, setActiveTab] = useState('Heatmap');
   const [isSidebarOpen] = useState(true);
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
   if (!user) return <LoginView onLogin={(u) => setUser(u)} />;
 
@@ -165,6 +172,13 @@ export default function App() {
           </div>
 
           <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 16 }}>
+            <button 
+              className="theme-toggle-btn" 
+              onClick={() => setTheme(t => t === 'light' ? 'dark' : 'light')}
+              title={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} Mode`}
+            >
+              {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
+            </button>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 12px', background: '#f0fdf4', borderRadius: 20, border: '1px solid #bbf7d0' }}>
               <div className="status-dot" />
               <span style={{ fontSize: 12, fontWeight: 600, color: '#15803d' }}>System Live</span>
