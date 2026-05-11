@@ -275,14 +275,12 @@ router.get('/tenant-comparison', (req, res) => {
       const totalInvocations = statsRows
         .filter(r => r.tenant_id === t)
         .reduce((s, r) => s + r.invocations, 0);
+      
+      // FIX: overallAdoption is the percentage of all available features that this tenant is actively using
       const avgAdoption = featureList.length > 0
-        ? Math.round(
-            featureList.reduce((sum, f) => {
-              const td = f.byTenant.find(x => x.tenantId === t);
-              return sum + (td?.adoptionRate || 0);
-            }, 0) / featureList.length
-          )
+        ? Math.round((activeFeatures / featureList.length) * 100)
         : 0;
+        
       return { tenantId: t, totalInvocations, activeFeatures, overallAdoption: avgAdoption };
     });
 
